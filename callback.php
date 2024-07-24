@@ -41,7 +41,7 @@ if (isset($_GET['code'])) {
     $_SESSION['user'] = $user;
     echo "Login effettuato con successo, benvenuto " . htmlspecialchars($user['username']);
     // Puoi reindirizzare l'utente ad una pagina protetta
-    // header('Location: protected.php');
+    header('Location: convertitore.php');
 } else {
     echo 'Errore durante l\'autenticazione.';
 }
